@@ -1,5 +1,5 @@
 var _; //globals
-
+  
 describe("About Applying What We Have Learnt", function() {
 
   var products;
@@ -60,8 +60,9 @@ describe("About Applying What We Have Learnt", function() {
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
 
+    var memo = 0;
     var sum = _.range(1001).reduce(function(memo, x) {
-      if(x % 5 == 0 || x % 3 || == 0) {
+      if(x % 5 == 0 || x % 3) {
         return memo + x;
       } else { return; }
     });    /* try chaining range() and reduce() */
